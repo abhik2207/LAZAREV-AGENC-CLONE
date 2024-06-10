@@ -23,6 +23,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    height: 12vh;
     padding: 1.4vmax 10.5vmax;
 }
 
@@ -43,16 +44,36 @@ nav {
 #nav-center {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     gap: 1.6vmax;
-    align-items: center;
     height: 100%;
     width: 80%;
+    padding: 1vmax 0vmax;
+    position: relative;
+    z-index: 6;
 }
 
-#nav-center > h4 {
+#nav-center > .nav-elem > h4 {
     font-size: 0.85vmax;
     text-transform: uppercase;
     letter-spacing: -0.05vmax;
+    cursor: pointer;
+    margin-bottom: 3vmax;
+}
+
+#nav-center > .nav-elem > h5 {
+    margin-bottom: 0.95vmax;
+    opacity: 0;
+    overflow: hidden;
+}
+
+#nav-center > .nav-elem > h5 > span {
+    font-size: 0.85vmax;
+    letter-spacing: -0.05vmax;
+    font-weight: 400;
+    cursor: pointer;
+    display: inline-block;
+    transform: translateY(30px);
 }
 
 #nav-right {
@@ -83,71 +104,13 @@ nav {
 
 #nav-bottom {
     width: calc(100% - 21vmax);
-    height: 0%;
+    height: 0vmax;
+    /* height: 11vmax; */
     position: absolute;
-    bottom: 0%;
+    top: 100%;
     border-bottom: 0.1vmax solid #fff;
-    transition: 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-nav:hover #nav-bottom {
-    height: 175%;
-    bottom: -175%;
     background-color: #111111;
-}
-
-#nav-bottom-content {
-    height: 100%;
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 9.3vmax;
-    gap: 1.6vmax;
-}
-
-.nav-bottom-links {
-    height: 100%;
-    padding-top: 1vmax;
-}
-
-.nav-bottom-links > h5 {
-    margin-bottom: 0.3vmax;
-}
-
-.nav-bottom-links > h5 > span {
-    font-size: 0.85vmax;
-    letter-spacing: -0.05vmax;
-    font-weight: 400;
-    cursor: pointer;
-}
-
-.nav-bottom-links:nth-child(1) {
-    padding-right: 0.9vmax;
-}
-
-.nav-bottom-links:nth-child(2) {
-    padding-right: 3.3vmax;
-}
-
-.nav-bottom-links:nth-child(3) {
-    padding-right: 0.55vmax;
-}
-
-.nav-bottom-links:nth-child(4) {
-    padding-right: 1.2vmax;
-}
-
-.nav-bottom-links:nth-child(5) {
-    padding-right: 3vmax;
-}
-
-.nav-bottom-links:nth-child(6) {
-    padding-right: 0vmax;
+    z-index: 5;
 }
 
 #page1 {
@@ -210,25 +173,6 @@ nav:hover #nav-bottom {
     border: 0.08vmax solid #ffffff6b;
     border-radius: 100vmax;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #page2 {
     height: 100vh;
