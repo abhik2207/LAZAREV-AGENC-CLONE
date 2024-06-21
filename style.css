@@ -173,12 +173,11 @@ nav {
     font-weight: 400;
     letter-spacing: -0.05vmax;
     padding: 0.4vmax 0.6vmax;
-    border: 0.08vmax solid #ffffff6b;
+    border: 0.08vmax solid #ffffff5d;
     border-radius: 100vmax;
 }
 
 #home-slider {
-    /* border: 2px solid #fff; */
     position: absolute;
     bottom: 5%;
     width: 45%;
@@ -237,7 +236,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-top: 1px solid #ffffff42;
+    border-top: 1px solid #ffffff2f;
 }
 
 #page2-left {
@@ -262,12 +261,56 @@ nav {
     font-size: 1.15vmax;
     letter-spacing: -1px;
     width: 65%;
-    color: #fff;
     font-weight: 400;
 }
 
 #page2-right {
     height: 100%;
     width: 50%;
-    background-color: lightpink;
+}
+
+.right-elem {
+    position: relative;
+    padding-top: 1vmax;
+    padding-bottom: 5vmax;
+    border-bottom: 1px solid #ffffff41;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.right-elem:last-child {
+    border: none;
+}
+
+.right-elem > h2 {
+    font-size: 1.5vmax;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    pointer-events: none;
+}
+
+.right-elem > p {
+    font-size: 0.9vmax;
+    pointer-events: none;
+    font-weight: 400;
+    color: #ffffff42;
+    letter-spacing: -0.5px;
+}
+
+.right-elem > p > i {
+    margin-left: 1vmax;
+    font-size: 1.1vmax;
+}
+
+.right-elem > img {
+    height: 7vmax;
+    width: 7vmax;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0;
+    transform: scale(0) translate(0%, 0%);
+    pointer-events: none;
 }
