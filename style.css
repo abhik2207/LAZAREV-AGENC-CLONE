@@ -4,11 +4,17 @@
     font-family: leiko;
     src: url(./fonts/Leiko-Regular.ttf);
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+*::selection {
+    background-color: #0DA34E;
     color: #fff;
 }
 
@@ -243,7 +249,7 @@ nav {
     position: absolute;
     height: 0.05vmax;
     width: calc(100% - 21vmax);
-    background-color: rgba(255, 255, 255, 0.226);
+    background-color: #ffffff3a;
     top: 0;
 }
 
@@ -531,7 +537,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3vmax 10vmax;
+    padding: 3vmax 10.5vmax;
 }
 
 .section:hover .section-left {
@@ -612,7 +618,6 @@ nav {
     height: 100%;
     width: 70%;
     position: relative;
-    border-top: 2px solid #acacac;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -622,6 +627,7 @@ nav {
     height: 100%;
     width: 45%;
     position: relative;
+    border-top: 2px solid #acacac;
 }
 
 .part > h1 {
@@ -676,4 +682,226 @@ nav {
     left: 0;
     opacity: 0;
     transition: 0.3s;
+}
+
+#page8 {
+    height: 50vh;
+    width: 100%;
+    background-color: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 0vmax 10.5vmax;
+}
+
+#page8-left {
+    height: 100%;
+    width: 25%;
+}
+
+#page8-right {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+#page8-right > h1 {
+    font-size: 4.5vmax;
+    line-height: 4.5vmax;
+}
+
+#page8-bottom-border {
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 21vmax);
+    height: 0.1vmax;
+    background-color: #ffffff3a;
+}
+
+#page9 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #111;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2vmax 10.5vmax;
+}
+
+#page9-left {
+    height: 100%;
+    width: 25%;
+    position: sticky;
+    top: 14.5%;
+}
+
+#page9-left > button {
+    border-radius: 50vmax;
+    background-color: #0DA34E;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 0.9vmax;
+    letter-spacing: -0.02vmax;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1.2vmax 4vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vmax;
+}
+
+#page9-left > button > i {
+    font-size: 1.25vmax;
+    font-weight: 400;
+}
+
+#page9-right {
+    height: 100%;
+    width: 70%;
+}
+
+#page9-para-header {
+    float: left;
+    height: 5vmax;
+    width: 13vmax;
+    padding: 0.4vmax;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.9vmax;
+    border-radius: 0.3vmax;
+}
+
+#page9-right > p {
+    font-size: 2.26vmax;
+    line-height: 2.5vmax;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: -0.02vmax;
+}
+
+.page9-content-header {
+    border-top: 0.2vmax solid #fff;
+    margin-top: 3vmax;
+    cursor: pointer;
+    height: fit-content;
+}
+
+.page9-content-header > h1 {
+    font-size: 2.9vmax;
+    margin: 1vmax 0vmax;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page9-content-header > h1 > i {
+    font-size: 2vmax;
+    font-weight: 400;
+}
+
+.page9-pills-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5vmax;
+    margin-bottom: 3vmax;
+}
+
+.page9-pill {
+    font-size: 0.8vmax;
+    font-weight: 600;
+    letter-spacing: -0.02vmax;
+    padding: 0.4vmax 1vmax;
+    border: 0.1vmax solid #ffffff5d;
+    border-radius: 100vmax;
+}
+
+.page9-content-body {
+    width: 100%;
+    height: fit-content;
+}
+
+.page9-elem {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 8vmax;
+    padding: 0vmax 0vmax;
+    padding-top: 1vmax;
+    border-top: 0.2vmax solid #ffffff1a;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.page9-elem-head {
+    width: 25%;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.page9-elem-head > h3 {
+    font-size: 1.5vmax;
+    font-weight: 400;
+}
+
+.page9-elem-body {
+    width: 55%;
+    height: 100%;
+}
+
+.page9-elem-body > p {
+    font-size: 0.82vmax;
+    font-weight: 500;
+}
+
+.page9-elem-icon {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    transition: 0.3s;
+}
+
+.page9-elem-icon > i {
+    font-size: 1.4vmax;
+}
+
+.page9-elem-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff13;
+    transform: translateY(-100%);
+    pointer-events: none;
+    transition: all ease-out 0.3s;
+}
+
+.page9-elem:hover .page9-elem-overlay {
+    transform: translateY(0%);
+}
+
+.page9-elem:hover .page9-elem-head {
+    padding-left: 1vmax;
+}
+
+.page9-elem:hover .page9-elem-icon {
+    padding-right: 1vmax;
+}
+
+.page9-elem:hover {
+    border-top: 0.1vmax solid #fff;
+}
+
+#page10 {
+    height: 100vh;
+    width: 100%;
+    background-color: #111111;
 }
