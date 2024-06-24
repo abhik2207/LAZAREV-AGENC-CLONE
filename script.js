@@ -231,11 +231,14 @@ function page11Animation() {
         duration: 1,
         scrollTrigger: {
             trigger: ".page11-elems-container",
-            scroller: "#main",
-            // markers: true,
+            markers: true,
             scrub: 1,
-            start: "top 90%",
-            end: "top 30%"
+            // scroller: "#main",
+            // start: "top 90%",
+            // end: "top 30%"
+            scroller: "body",
+            start: "top 80%",
+            end: "top 20%"
         }
     });
 }
