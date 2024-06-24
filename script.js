@@ -231,7 +231,7 @@ function page11Animation() {
         duration: 1,
         scrollTrigger: {
             trigger: ".page11-elems-container",
-            markers: true,
+            // markers: true,
             scrub: 1,
             // scroller: "#main",
             // start: "top 90%",
