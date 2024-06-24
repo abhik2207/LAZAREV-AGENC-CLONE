@@ -33,7 +33,7 @@ function navbarAnimation() {
             });
     });
 }
-navbarAnimation();
+// navbarAnimation();
 
 
 function page2Animation() {
@@ -121,6 +121,7 @@ function page7Animation() {
 }
 page7Animation();
 
+
 function page9Animation() {
     const bodyUiUx = document.querySelector(".body-ui-ux");
     const headerUiUx = document.querySelector(".header-ui-ux");
@@ -161,3 +162,20 @@ function page9Animation() {
     });
 }
 page9Animation();
+
+
+function page11Animation() {
+    gsap.from(".page11-elems-container > h4", {
+        x: 0,
+        duration: 1,
+        scrollTrigger: {
+            trigger: ".page11-elems-container",
+            scroller: "body",
+            // markers: true,
+            scrub: 1,
+            start: "top 80%",
+            end: "top 20%"
+        }
+    });
+}
+page11Animation();
